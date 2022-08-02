@@ -1,20 +1,20 @@
 name: publish-open-api-to-postman
-descripton: "Action responsible for Publish and sync open api specification to postman"
+description: "Action responsible for Publish and sync open api specification to postman"
 author: Diego Conti Santeri Tonini <diegosanteri@gmail.com>
-
+inputs: # user can input the name inside the name of user variable , descriptions etc
+  postmanCollectionid:
+    description: 'Postman Collection id'
+    required: true
+    default: 'String'
+  postmanApiKey:
+    description: 'Postman API Key'
+    required: true
+    default: 'String'
+  openApiSpec:
+    description: 'It can be an url or the file'
+    required: true
+    default: 'String'
 runs: 
   using: 'node12'
   main: index.js
-  inputs: # user can input the name inside the name of user variable , descriptions etc
-    postmanCollectionid:
-      description: 'Postman Collection id'
-      required: true
-      default: 'String'
-    postmanApiKey:
-      description: 'Postman API Key'
-      required: true
-      default: 'String'
-    openApiSpec:
-      description: 'It can be an url or the file'
-      required: true
-      default: 'String'
+
