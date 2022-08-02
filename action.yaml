@@ -1,5 +1,5 @@
 name: publish-open-api-to-postman
-descripton: It is responsible for publish open api specification v3 to postman
+descripton: Publish open api specification to postman
 author: Diego Conti Santeri Tonini <diegosanteri@gmail.com>
 
 runs: 
