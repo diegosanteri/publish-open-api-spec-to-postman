@@ -1,5 +1,5 @@
 name: publish-open-api-to-postman
-descripton: Publish open api specification to postman
+descripton: "Action responsible for Publish and sync open api specification to postman"
 author: Diego Conti Santeri Tonini <diegosanteri@gmail.com>
 
 runs: 
