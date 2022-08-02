@@ -34,22 +34,22 @@ const convertToPostman = async (openapiData) => {
   });
 }
 
-const publish = async (postmanCollectionid, postmanCollection, postmanApiKey) => {
-  return await axios.put(`https://api.getpostman.com/collections/${postmanCollectionid}?apikey=${postmanApiKey}`, postmanCollection);
+const publish = async (postmanCollectionId, postmanCollection, postmanApiKey) => {
+  return await axios.put(`https://api.getpostman.com/collections/${postmanCollectionId}?apikey=${postmanApiKey}`, postmanCollection);
 }
 
 const update = async () => {
 
   try {
     const postmanApiKey = core.getInput('postmanApiKey');
-    const postmanCollectionid = core.getInput('postmanCollectionid');
+    const postmanCollectionId = core.getInput('postmanCollectionId');
     const openApiSpec = core.getInput('openApiSpec');
 
     const isUrl = (openApiSpec.startsWith("https") || openApiSpec.startsWith("http"));
     const openapiData = isUrl ? await getSpecFromUrl(openApiSpec) : getSpecFromFile(openApiSpec);
     const postmanCollection = await convertToPostman(openapiData);
 
-    await publish(postmanCollectionid, postmanCollection, postmanApiKey);
+    await publish(postmanCollectionId, postmanCollection, postmanApiKey);
   } catch (e) {
     console.log(e)
     core.setFailed(e.message);
