@@ -1,8 +1,22 @@
 {
+  "name": "publish-open-api-spec-to-postman",
+  "version": "1.0.0",
+  "description": "See also: [loopDelicious/converter](https://github.com/loopDelicious/converter)",
+  "main": "index.js",
   "dependencies": {
     "@actions/core": "^1.9.0",
     "@actions/github": "^5.0.3",
     "axios": "^0.27.2",
     "openapi-to-postmanv2": "^4.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegosanteri/publish-open-api-spec-to-postman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegosanteri/publish-open-api-spec-to-postman/issues"
+  },
+  "homepage": "https://github.com/diegosanteri/publish-open-api-spec-to-postman#readme"
 }
