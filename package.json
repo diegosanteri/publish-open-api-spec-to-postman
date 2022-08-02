@@ -1,6 +1,6 @@
 {
   "name": "publish-open-api-spec-to-postman",
-  "version": "v1",
+  "version": "v1.1",
   "description": "See also: [loopDelicious/converter](https://github.com/loopDelicious/converter)",
   "main": "index.js",
   "dependencies": {

@@ -19,5 +19,5 @@ inputs: # user can input the name inside the name of user variable , description
     default: 'String'
 runs: 
   using: 'node12'
-  main: index.js
+  main: 'dist/index.js'
 
